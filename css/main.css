@@ -45,6 +45,7 @@ body {
     width: 100%;
     position: absolute;
     transform: translateX(-200%);
+    z-index: 1;
     transition: all 0.5s ease-in-out;
 }
 
@@ -62,6 +63,7 @@ body {
     padding: 0;
     height: auto;
 }
+
 .site-navigation li {
     display: flex;
 }
@@ -77,6 +79,38 @@ body {
     background-color: beige;
     max-width: 1600px;
     padding: 1em;
+}
+.recommendation__container {
+    background-color: darkseagreen;
+
+}
+.recommendation__container > figure {
+    position: relative;
+    margin: 0;
+}
+.recommendation__container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.recommendation__container > figure figcaption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.recommendation__container > figure figcaption p {
+    color: white;
+    padding: 1em;
+}
+.text-with-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .container {
     background-color: aquamarine;
